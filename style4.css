@@ -1,0 +1,77 @@
+.navbar-expand-md .navbar-nav .navbar-link {
+    padding-right: initial;
+}
+
+.navbar {
+    z-index: 1000;
+
+}
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cart {
+    display: flex;
+    padding: 5px;
+    font-size: 30px;
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bi-cart2 {
+    color: black
+}
+
+.info-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-info-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 80px
+}
+.container-book {
+    display: flex;
+    justify-content: space-between;
+}
+.img-info {
+    width: 200px;
+    height: auto
+}
+a {
+   text-decoration: none;
+}
+.description-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+.to-categories, .to-home {
+    padding: 5px 10px;
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 750px){
+    .container-book {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-book {
+        margin-left: 0;
+        padding-top: 20px;
+        align-items: center;
+    }
+}

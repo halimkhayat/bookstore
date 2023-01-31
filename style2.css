@@ -1,0 +1,284 @@
+body {
+    --nav-load-time: 400ms;
+    --nav-link-load-time: 600ms;
+    --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
+}
+
+
+/* navbar section */
+.navbar-expand-md .navbar-nav .navbar-link {
+    padding-right: initial;
+}
+
+.navbar {
+    z-index: 1000;
+    animation: nav-load var(--nav-load-time) ease-in;
+}
+
+.nav-link,
+.navbar-brand {
+    animation-name: nav-link-load;
+    animation-duration: var(--nav-link-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--nav-load-time);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* .active {
+    background-color: white;
+    border-top: solid;
+    border-bottom: solid;
+} */
+
+.active, .nav-link:hover {
+   color: black;
+}
+
+.cart {
+    display: flex;
+    padding: 5px;
+    font-size: 30px;
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
+.cart-amount {
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    position:absolute;
+    padding: 2px 5px;
+    top: -7px;
+    right: -10px;
+    border-radius: 5px;
+
+}
+
+.bi-cart2 {
+    color: black
+}
+
+/* bookshelf section */
+
+/* .bookshelf-main {
+    display: none;
+} */
+
+.bookshelf {
+    text-align: center;
+    border-bottom:  solid;
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.book-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+
+.box {
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.filter-display {
+    display: flex;
+    justify-content: center;
+}
+
+.book-images {
+    width: auto;
+    height:130px;
+    padding-top: 10px;
+
+}
+
+.book-name {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 150px;
+    align-items: center;
+}
+
+
+/* responsivness */
+@media (max-width: 1200px) {
+    .book-row {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .book-row {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 500px) {
+    .book-row {
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
+/**
+* Style for cart.html
+**/
+
+
+.backBtn {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.main-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    border: solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 20px;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+    position: relative;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.quantity-box {
+    display: flex;
+    margin-top: 20px;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.bi-x-square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        width: 300px
+    }
+    .item-info {
+       margin-right: 0px
+    }
+
+    .item-info h5{
+        text-align: right;
+    }
+}
+
+.purchase-detail {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.checkout {
+    background-color: yellow;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+}
+
+.remove-all {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+/* css animation */
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes nav-link-load {
+    0% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes article-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

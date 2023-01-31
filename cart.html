@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="images/laman-icon.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style3.css" class="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+    <div class="container   flex-md-row">
+        <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-row bg-light justify-content-around">
+            <a href="index.html">
+                <img src="images/halaman.png" style="height: 50px; width:auto;">
+            </a>
+            <a href="cart.html">
+                <div class="cart" id="cart-box">
+                    <i class="bi bi-cart2"></i>
+                    <!-- <div class="cart-amount" id="cartAmount">0</div> -->
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSideRight"
+                aria-controls="navbarSideRight" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <main class="ps-0 ps-md-5 flex-grow-1">
+            <h1 class="bookshelf cart-main">Cart</h1>
+            <div class="main-cart" id="cartItem">
+                <!-- <div class="cart-item">
+                    <img src="images/book_11.jpeg" style="height:auto; width: 120px">
+                    <div>
+                        <h3>book name</h3>
+                        <div>RM 30.00</div>
+                        <div class="quantity-box">
+                            <i class="bi bi-dash-circle"></i>
+                            <div class="quantity">0</div>
+                            <i class="bi bi-plus-circle"></i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="purchase-detail" id="totalPrice">
+                <!-- <h2>Total Price: </h2>
+                <div class="cart-main-btn">
+                    <button class="checkout">Checkout</button>
+                    <button class="remove-all">Remove All</button>
+                </div>  -->
+            </div>
+        </main>
+    </div>
+    <script src="./src/bookData.js" async></script>
+    <script src="./src/cart.js" async></script>
+</body>
+</html>

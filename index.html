@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,intitial-scale=1.0">
+        <link rel="icon" href="images/laman-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+        <title>Halaman Bookstore</title>
+        <link rel="stylesheet" href="style.css" class="">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <!-- animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+        <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <style>
+        </style>
+    </head>
+    <body>
+<<<<<<< HEAD
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+          </svg>
+            <!-- navigation bar -->
+            <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/halaman.png" style="height: 50px; width:auto;">
+                    </a>
+
+                    <div class=" d-flex justify-content-between align-content-center" style="width: 400px;">
+                        <form class="d-flex nav-search-form mx-auto" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 200px;">
+                            <button class="btn btn-outline-info" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav align-items-center flex-row-reverse">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                                    <i class="bi bi-person-circle" style="color: black;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="bi bi-cart" style="color: black;"></i>
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" name="button" data-bs-toggle="collapse" data-bs-target="#mobileButton" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mobileButton">
+                        <ul class="navbar-nav text-center ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-bs-toggle="dropdown">Category</a>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Art</a></li>
+                                    <li><a class="dropdown-item" href="#">Biography</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                    <li><a class="dropdown-item" href="#">Magazine</a></li>
+                                    <li><a class="dropdown-item" href="#">Fiction</a></li>
+                                    <li><a class="dropdown-item" href="#">Business</a></li>
+                                    <li><a class="dropdown-item" href="#">History</a></li>
+                                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                                    <li><a class="dropdown-item" href="#">Bestseller</a></li>
+                                    <li><a class="dropdown-item" href="#">Popular</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">What's New?</a></li>
+                                  </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="categories.html">Bookshelf</a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div> 
+            </nav>  
+=======
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/halaman.png" style="height: 50px; width:auto;">
+                </a>
+                <button class="navbar-toggler" type="button" name="button" data-bs-toggle="collapse" data-bs-target="#mobileButton" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mobileButton">
+                    <ul class="navbar-nav text-center ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#deals" class="nav-link">Great Deals!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutUs" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactUs" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Bookshelf</a>
+                        </li>  
+                    </ul>
+                </div>
+            </div> 
+        </nav>  
+>>>>>>> ce0821f (first commit)
+
+        <!-- hero -->
+        <div class="container-fluid hero-main">
+            <div class="container col-xxl-8 px-4 py-5 ">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/book-png-25696.png" class="d-block mx-lg-auto img-fluid hero-img" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 hero-h1">Get your book for the best price</h1>
+                    <p class="lead text-light hero-p">Halaman Bookstore is not your typical bookstore. We provide varieties of book with great discounted price! We also provide free shipping to all parts of Malaysia. What are you waiting for, shop with us now!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start hero-btn">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                        <a href="categories.html" class="text-decoration-none text-light">Discover Now</a>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+            
+
+        <!-- booklist -->
+        <div id="deals" class="container mb-5">
+            <div class="row">
+                <div class="col bestseller-box" style="margin-left: 20px;">
+                    <h2 class="sec-title">Bestsellers</h2>
+                    <div class=" sectionA">
+                        <div class="left-bestseller" id="booklist-left">
+<<<<<<< HEAD
+=======
+                            <!-- bestseller section. display with javascript code -->
+>>>>>>> ce0821f (first commit)
+                            <!-- <div class="bestseller-sec">
+                                <div class="book-image">
+                                    <img class="img-style" src="images/book_11.jpeg" alt="" class="" style="width: 100px; height: auto;">
+                                </div>
+                                <div class="section-details">
+                                    <div class="author-flex">
+                                        <div class="author">Harry Potter and the Philosopher's Stone</div>
+                                    </div>
+                                    <div class="book-details">
+                                        <div class="booktitle">JK Rowling</div>
+                                        <div class="price">RM 70.00</div>
+                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- discount section -->
+                <div class="col ">
+                    <h2 class="sec-title">Discount</h2>
+                    <div class="col sectionB" id="discount-section">
+<<<<<<< HEAD
+=======
+                        <!-- discount section. displayt with javascript code -->
+>>>>>>> ce0821f (first commit)
+                        <!-- <div class="discount-flex">
+                            <div class="discount-box">
+                                <div class="book-discount">
+                                    <div>
+                                        <img src="images/book_9.jpeg" alt="" class="discount-img" style="height:140px; width:auto;">
+                                    </div>
+                                    <div class="description">
+                                        <h5>The Singapore and Malacca Straits</h5>
+                                        <div class="price-discount">
+                                            <div>RM 69.80</div>
+                                        </div> 
+                                        <div class="btn btn-sm btn-outline-info mt-2">Add to cart</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Carousel customer review -->
+        <div id="myCarousel" class="carousel slide carousel-div" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner container-fluid">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <img class="customer-img" src="images/customer_1.jpg">
+                        <h3 class=""><i class="">"The best place to buy your book online"</i></h3>
+                        <h5>- A.J Brown</h5>
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img class="customer-img" src="images/customer_2.webp" alt="" class="">
+                        <h3 class=""><i class="">"Great place,reasonable prices and helpful staff"</i></h3>
+                        <h5>- Aida</h5>
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img class="customer-img" src="images/customer_3.jpeg" alt="" class="">
+                        <h3 class=""><i class="">"This is an amazing book store with lots of book collections"</i></h3>
+                        <h5>- Uzma</h5>
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img class="customer-img" src="images/customer_4.webp" alt="" class="">
+                        <h3 class=""><i class="">"Finallly, I found my new bookstore. Their prices are fantastic too."</i></h3>
+                        <h5>- Syafiq</h5>
+                    </div>
+                </div>          
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+             </button>
+        </div>
+       
+        <!-- Features -->
+        <div id="aboutUs" class="container px-4 py-5" id="featured-3">
+            <h1 class="main-text">More than a book store</h1>
+            <h3 class="text-no2">We're here to become the best online bookstore. Unleash the potential and bridging the gap between
+                people and books</h3>
+            <div class="about-container">
+                <div class="about-box box-1">
+                    <img class="img-box" src="/images/undraw_Reading_time_re_phf7.png">
+                    <p class="p-detail">More than thousands of books</p>
+                </div>
+                <div class="about-box box-2">
+                    <img class="img-box" src="/images/undraw_Mobile_life_re_jtih.png">
+                    <p class="p-detail">Easy to buy, just one click!</p>
+                </div>
+                <div class="about-box box-3">
+                    <img class="img-box" src="/images/undraw_Conversation_re_c26v.png">
+                    <p class="p-detail">Connect with other people on our website</p>
+                </div>
+            </div>
+            <!-- <h2 class="pb-2 border-bottom">Why buy from us?</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <i class="fa-solid fa-cart-shopping" height="24px" width="auto" color="white"></i>
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+                </div>
+                <h2>Easy Checkout</h2>
+                <p>An express checkout is an ultra-fast checkout form, usually designed for returning customers, that reduces form fields in order to ensure a quicker checkout process. Shipping, billing, and payment information is submitted in a contained area of the site, making it simple and efficient for the customer.</p>
+                <a href="#" class="icon-link">
+                  Read More
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <i class="bi bi-book" height="24px" width="auto" color="white"></i>
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                </div>
+                <h2>Over a million collections</h2>
+                <p>Millions book collection you can get from here. We are a bookstore dedicated to being a haven for bibliophiles, as we focus on bringing our customers the best books publishing has to offer, with over 300,000 titles in English, Japanese, Chinese and Malay.</p>
+                <a href="#" class="icon-link">
+                  Read More
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <i class="bi bi-truck" height="24px" width="auto" color="white"></i>
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                </div>
+                <h2>Fast Delivery</h2>
+                <p>Get your 24 hours same day delivery service in Malaysia now with us at Halaman Bookstore. We are on demand book express delivery that operated anytime anywhere.</p>
+                <a href="#" class="icon-link">
+                  Read More
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+            </div> -->
+          </div>
+
+        <!-- owl carousel -->
+        <div class="">
+            <div class="container swiper mySwiper">
+                <h2 class="text-center">Popular Category</h2>
+                <div class="col swiper-wrapper" height="700px">
+                    <div class="col swiper-slide">
+                        <div class=" popular-sec">
+                            <div class="">
+                                <img src="images/book_29.webp" alt="" class="" style="height:200px; width: auto; margin-top: 40px;">
+                            </div>
+                            <p class="popular-paragraph text-center">Kids</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_15.jpeg" alt="" class="" style="height:200px; width: auto; margin-top: 40px;">
+                            </div>
+                            <p class="popular-paragraph text-center">Education</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_21.jpeg" alt="" class="" style="height:200px; width: auto; margin-top: 40px;">
+                            </div>
+                            <p class="popular-paragraph text-center">Religion</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_31.avif" alt="" class="" style="height:200px; width: auto; margin-top: 40px;">
+                            </div>
+                            <p class="popular-paragraph text-center">Romance</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_18.jpeg" alt="" class="" style="height:200px; width: auto; margin-top: 40px;">
+                            </div>
+                            <p class="popular-paragraph text-center">Self Help</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_32.webp" alt="" class="" >
+                            </div>
+                            <p class="popular-paragraph text-center">Comic</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_9.jpeg" alt="" class="" >
+                            </div>
+                            <p class="popular-paragraph text-center">History & Archaeology</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_13.jpeg" alt="" class="" >
+                            </div>
+                            <p class="popular-paragraph text-center">Fiction</p>
+                        </div>
+                    </div>
+                    <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_6.jpeg" alt="" class="" >
+                            </div>
+                            <p class="popular-paragraph text-center">Business</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col swiper-slide">
+                        <div class="col popular-sec">
+                            <div class="">
+                                <img src="images/book_25.jpeg" alt="" class="" >
+                            </div>
+                            <p class="popular-paragraph text-center">Motivation</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="contactUs" class="container-fluid mt-5 bg-light">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Contact Us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Lot 10 Persiaran Dagang, Cyberjaya, Selangor</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Tel: +6010000898</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Email: info@halaman.com</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="col-2 ms-5">
+                        <h5>Our Store Locations</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cyberjaya</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bangsar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ipoh</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Penang</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kota Kinabalu</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="col-2 ms-5">
+                        <h5>News & Info</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Press Release</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Product Supports</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Community</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Partnership</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="col-4 offset-1">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 20212 Halaman Bookstore, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+         <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+<<<<<<< HEAD
+       <script type="text/javascript" src="script.js" async></script>
+       <script type="text/javascript" src="bookdata.js" async></script>
+=======
+        <script src="./src/bookData.js"></script>
+       <script type="text/javascript" src="./src/main.js" async></script>
+>>>>>>> ce0821f (first commit)
+    </body>
+</html>

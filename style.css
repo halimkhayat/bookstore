@@ -1,0 +1,350 @@
+/* html & main styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    --nav-load-time: 400ms;
+    --nav-link-load-time: 600ms;
+    --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
+}
+
+/* navbar styling  */
+.navbar {
+    z-index: 1000;
+    animation: nav-load var(--nav-load-time) ease-in ;
+}
+
+.nav-link, .navbar-brand {
+    animation-name: nav-link-load;
+    animation-duration: var(--nav-link-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--nav-load-time);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.icon-nav {
+    font-size: 30px;
+}
+
+/* hero section website */
+.hero-main {
+    background-image: url(images/Purple-Aesthetic-Wallpaper.jpeg);
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.hero-h1, .hero-img {
+    color: white;
+    font-weight: 500;
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.hero-p {
+    color: white;
+    font-weight: 500;
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.hero-btn {
+    color: white;
+    font-weight: 500;
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 400ms);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+/* About us section */
+#aboutUs {
+    margin-top: 100px;
+}
+.main-text {
+    text-align: center;
+    margin-top: 80px;
+}
+.text-no2 {
+    text-align: left;
+    width: 500px;
+    margin-top: 80px;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-top: 60px;
+    height: 500px
+
+}
+.about-box {
+    /* border: solid;
+    border-color: grey; */
+    margin-left: 20px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bi-book{
+    margin-top: 30px;
+}
+.img-box {
+    height: 100px;
+    width: auto;
+}
+.p-detail {
+    text-align: center;
+    margin-top: 20px
+}
+/* carousel */
+.carousel-inner {
+    background-image:linear-gradient(45deg,rgb(80, 152, 177),rgb(123, 33, 207));
+    background-image: url(images/wp5910896\ -\ Edited.png);  
+    height: 400px;
+    
+}
+.customer-img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.carousel-item {
+    width: 100%;
+    height: 400px;
+    color:white;
+}
+
+
+/* booklist */
+.book-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+.sec-title {
+    margin-top: 80px;
+    border-bottom: solid 1px rgb(171, 169, 169);
+}
+.sectionA {
+    margin-top: 40px;
+    border: solid;
+    box-shadow: 5px 10px;
+    
+}
+.bestseller-sec {
+    width: 300px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+<<<<<<< HEAD
+
+}
+=======
+>>>>>>> ce0821f (first commit)
+
+.left-bestseller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-bestseller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section-details {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author {
+    font-size: 20px;
+    font-weight:500;
+}
+.booktitle {
+    margin-top: 20px; 
+}
+.price {
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(157, 157, 43);
+    font-weight: bold;
+}
+.price:hover {
+    cursor: pointer;
+}
+.sectionB {
+    background-color: rgba(212, 212, 212, 0.653);
+<<<<<<< HEAD
+    border-radius: 10px;
+    /* width: 500px; */
+=======
+>>>>>>> ce0821f (first commit)
+    margin-top:40px ;
+    box-shadow: 5px 10px;
+    border: solid;
+}
+.discount-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.discount-box {
+    width: 370px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.book-discount {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.price-discount {
+    display:flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .swiper {
+<<<<<<< HEAD
+    width: 800px;
+=======
+      width: 800px;
+>>>>>>> ce0821f (first commit)
+  }
+
+
+  .popular-sec {
+    width: 200px;
+    height: 320px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s;
+  }
+
+  .popular-sec img {
+    height:200px; 
+    width: auto;
+    margin-top: 40px;
+  }
+
+  .popular-paragraph {
+    font-size: 24px;
+    font-weight:600;
+  }
+
+  .popular-sec:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.7;
+    
+  }
+
+  .img-style {
+    width: 100px;
+    height: auto;
+  }
+
+  .discount-img {
+    height: 140px;
+    width: auto;
+<<<<<<< HEAD
+  }
+=======
+  }
+
+  /* animation */
+  @keyframes nav-load {
+      0% {
+          transform: translateY(-100%);
+      }
+
+      100% {
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes nav-link-load {
+      0% {
+          transform: scale(0);
+      }
+
+      90% {
+          transform: scale(1.1);
+      }
+
+      100% {
+          transform: scale(1);
+      }
+  }
+
+  @keyframes article-load {
+      0% {
+          transform: translateY(-20px);
+          opacity: 0;
+      }
+
+      100% {
+          transform: translateY(0px);
+          opacity: 1;
+      }
+  }
+
+  @media (max-width: 1000px) {
+    .left-bestseller {
+       grid-template-columns: 1fr;
+       place-items: center;
+    }
+
+  }
+
+  @media (max-width: 1000px) {
+    .text-no {
+        text-align: center;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-box {
+        margin-top: 30px;
+    }
+  }
+
+   /* @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  } */
+>>>>>>> ce0821f (first commit)
